@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "rejume_filler",
+  "version": "1.0",
+  "description": "HTML form의 id 값에 따라 자동으로 이력서 내용을 채우는 플러그인",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
